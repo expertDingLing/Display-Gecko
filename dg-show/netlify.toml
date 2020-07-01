@@ -1,0 +1,21 @@
+[build]
+  base    = ""
+  publish = "packages/dg-show/build"
+  command = "REACT_APP_STAGE=dev yarn build"
+
+[context.master]
+  command = "REACT_APP_STAGE=prod yarn build"
+
+[context.development]
+  command = "REACT_APP_STAGE=dev yarn build"
+
+[context.deploy-preview]
+  command = "REACT_APP_STAGE=dev yarn build"
+
+[context.branch-deploy]
+  command = "REACT_APP_STAGE=dev yarn build"
+
+[[redirects]]
+    from    = "/*"
+    to      = "/index.html"
+    status  = 200

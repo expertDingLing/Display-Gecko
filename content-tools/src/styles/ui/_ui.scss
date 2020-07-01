@@ -1,0 +1,118 @@
+/*
+The widget CSS class should be applied any UI element that's insert into the DOM
+and not within a widget, the widget CSS class resets the style for of all
+supported child elements.
+*/
+
+.ct-widget,
+.ct-widget * {
+    /* Reset */
+    div, span,
+    iframe,
+    a, b, i
+    fieldset, form, label, legend,
+    table, caption, tbody, thead, tr, th, td {
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    /* Defaults */
+    @include box-sizing(border-box);
+}
+
+table {
+    -webkit-font-feature-settings: "kern", "liga", "tnum";
+    -moz-font-feature-settings: "kern", "liga", "tnum";
+    -ms-font-feature-settings: "kern", "liga", "tnum";
+    font-feature-settings: "kern", "liga", "tnum";
+    border-collapse: collapse;
+    font-size: 20px;
+    margin-top: 20px;
+    table-layout: fixed;
+    width: 94%;
+    margin-left: 3%;
+    
+    th {
+        border-bottom: 1px solid #494949;
+        font-weight: bold;
+        padding: 10px 0;
+        text-align: left; }
+    td {
+        border-bottom: 1px solid #c9c9c9;
+        padding: 10px 0; }
+    tr, td, th {
+        padding-left: 20px;
+        padding-right: 20px;
+        vertical-align: middle; }
+}
+
+img {
+    pointer-events: none;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+    &.align-left {
+        clear: initial;
+        float: left;
+        margin-right: 0.5em;
+    }
+
+    &.align-right {
+        clear: initial;
+        float: right;
+        margin-left: 0.5em;
+    }
+
+    &.center-vertically {
+        vertical-align: middle;
+        margin: auto 0;
+        margin-bottom: 0.25em;
+    }
+
+    &.center-horizontally {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+
+.ct-widget {
+    opacity: 0;
+    @include type-text;
+    z-index: $base-z-index;
+
+    @include transition-property(opacity);
+    @include transition-duration(0.25s);
+    @include transition-timing-function(ease-in);
+}
+
+.ct-widget--active {
+    opacity: 1;
+
+    @include transition-property(opacity);
+    @include transition-duration(0.25s);
+    @include transition-timing-function(ease-in);
+}
+
+@import "attributes";
+@import "crop-marks";
+@import "dialogs";
+@import "flashes";
+@import "grips";
+@import "ignition";
+@import "inspector";
+@import "modal";
+@import "progress";
+@import "sections";
+@import "toolbox";

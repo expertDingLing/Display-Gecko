@@ -1,0 +1,41 @@
+{
+  "name": "@displaygecko/dg-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.7.1",
+    "@material-ui/icons": "^4.5.1",
+    "aws-amplify": "^2.2.2",
+    "aws-amplify-react": "^2.5.4",
+    "lodash": "^4.17.15",
+    "modern-normalize": "^0.6.0",
+    "moment": "^2.24.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.4"
+  },
+  "scripts": {
+    "start:admin": "react-scripts start",
+    "build:admin": "react-scripts build",
+    "test:admin": "react-scripts test",
+    "eject:admin": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+.ct-widget.ct-ignition {
+  top: 60px;
+}
+
+.ce-element--type-table {
+  -webkit-font-feature-settings: "kern", "liga", "tnum";
+  -moz-font-feature-settings: "kern", "liga", "tnum";
+  -ms-font-feature-settings: "kern", "liga", "tnum";
+  font-feature-settings: "kern", "liga", "tnum";
+  border-collapse: collapse;
+  /* font-size: 14px; */
+  margin-top: 20px;
+  table-layout: fixed;
+  width: 94%;
+  margin-left: 3%;
+}
+
+.ce-element--type-table th {
+  border-bottom: 1px solid #494949;
+  font-weight: bold;
+  padding: 10px 0px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.ce-element--type-table td {
+  border-bottom: 1px solid #c9c9c9;
+  vertical-align: middle;
+  padding: 10px 0px;
+}
+
+.ce-element .ce-element--type-table-cell-text {
+  padding-left: 20px;
+  padding-right:20px;
+  word-break: break-all !important;
+}
+
+/* Alignment styles for images, videos and iframes in editable regions */
+
+/* Center (default) */
+[data-editable] iframe,
+[data-editable] image,
+[data-editable] [data-ce-tag="img"],
+[data-editable] img,
+[data-editable] video {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* Left align */
+[data-editable] .align-left {
+  clear: initial;
+  float: left;
+  margin-right: 0.5em;
+}
+
+/* Right align */
+[data-editable].align-right {
+  clear: initial;
+  float: right;
+  margin-left: 0.5em;
+}
+
+/* Alignment styles for text in editable regions */
+[data-editable] .text-center {
+  text-align: center;
+}
+
+[data-editable] .text-left {
+  text-align: left;
+}
+
+[data-editable] .text-right {
+  text-align: right;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+hr {
+  height: 5px;
+  background-color: #c9c9c9;
+}

@@ -1,0 +1,38 @@
+iframe,
+image,
+[data-ce-tag="img"],
+img,
+video {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* Left align */
+.align-left {
+  clear: initial;
+  float: left;
+  margin-right: 0.5em;
+}
+
+/* Right align */
+.align-right {
+  clear: initial;
+  float: right;
+  margin-left: 0.5em;
+}
+
+/* Alignment styles for text in editable regions */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
